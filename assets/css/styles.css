@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background: #fffcf4;
+}
+
+/* common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 24.5px;
+}
+
+a {
+    text-decoration: none;
+}
+/* Header */
+
+.header.fixed {
+    position: sticky;
+    top: -2.4rem;
+}
+
+.header .body {
+    padding: 3.6rem 0 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    padding: 8px 21px;
+    color: #5f5b53;
+}
+
+.nav li.active a,
+.nav a:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 0.2rem;
+    background-color: #171100;
+    border-radius: 1px;
+}
+
+.header .btn-header {
+    padding: 11px 41px;
+    color: #ffffff;
+    background: #171100;
+}
+
+.header .action {
+    margin-left: 4.9rem;
+}
