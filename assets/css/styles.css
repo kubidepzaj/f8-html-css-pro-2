@@ -288,7 +288,7 @@ a {
     justify-content: space-between;
 }
 
-.popular-top .heading.lv2 {
+.heading.lv2 {
     font-size: 3.8rem;
     line-height: 1.26;
 }
@@ -482,4 +482,77 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* Features */
+
+.feature {
+    margin-top: 20rem;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .body .images {
+    display: flex;
+    gap: 0 3rem;
+}
+
+.feature .images img {
+    width: 27rem;
+    height: 40.4rem;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.feature .images img:first-child {
+    margin-top: 3.4rem;
+}
+
+.feature .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40.1%;
+}
+
+.feature .content .desc {
+    margin-top: 1.6rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.feature .content .btn-sign-up {
+    margin-top: 3.2rem;
+    padding: 1.1rem 3.7rem;
+    line-height: 1.75;
+    background: var(--primary-color);
+}
+
+.feature .content .btn-sign-up:hover {
+    background: #171100;
+    color: var(--primary-color);
+    opacity: 0.9;
+}
+
+.feature-2nd {
+    padding-bottom: 20rem;
+}
+
+.feature-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.feature-2nd .content {
+    width: 57rem;
+}
+
+.feature-2nd .images img {
+    margin-top: 0 !important;
+    width: 470px;
+    height: 440px;
 }
