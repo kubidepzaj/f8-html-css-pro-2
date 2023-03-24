@@ -33,8 +33,37 @@ body {
     color: #ffffff;
 }
 
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
 a {
     text-decoration: none;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
 }
 /* Header */
 .header {
@@ -98,6 +127,7 @@ a {
 .hero {
     padding-top: 52px;
     background-color: #fffcf4;
+    padding-bottom: 65px;
 }
 
 .hero .body {
@@ -130,6 +160,7 @@ a {
 
 .hero-summary .item {
     display: flex;
+    align-items: center;
 }
 
 .hero-summary .item + .item {
@@ -171,21 +202,13 @@ a {
     padding: 6.4rem 0 0 13rem;
 }
 
-.hero .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
+.hero .heading.lv1 {
     font-size: 5.8rem;
     line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #171100;
 }
 
 .hero .desc {
     margin-top: 2.2rem;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 1.67;
-    color: #5f5b53;
 }
 
 .hero .cta-group {
@@ -249,4 +272,143 @@ a {
 
 .hero .desc.stats {
     margin-top: 8px;
+}
+
+/* Popular */
+
+.popular {
+    padding: 20rem 0;
+}
+
+/* Popular-top */
+
+.popular .popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-top .heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
+.popular-top .desc {
+    width: 45.8rem;
+    margin-top: 1.6rem;
+}
+
+.popular-top .controls {
+    display: flex;
+}
+
+.controls .controls-btn {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.controls .controls-btn:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.controls .controls-btn + .controls-btn {
+    margin-left: 1.8rem;
+}
+
+/* course-list */
+
+.course-list {
+    margin-top: 5.5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.course-item {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
+
+.course-item:hover {
+    border: 1px solid transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.1);
+}
+
+.course-item .thumb {
+    width: calc(100% + 2px);
+    height: 27.8rem;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    margin: -1px;
+}
+
+.course-item .info {
+    padding: 1.6rem 2.2rem 2.2rem 2.2rem;
+}
+
+.course-item .info .head,
+.info .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-item .info .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.course-item .info .title a {
+    color: #171100;
+}
+
+.info .rating {
+    display: flex;
+    align-items: center;
+}
+
+.info .rating span {
+    margin-left: 0.6rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: var(--primary-color);
+}
+
+.info .foot {
+    margin-top: 1.2rem;
+}
+
+.info .desc {
+    margin-top: 0.6rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.info .btn-foot {
+    background: #171100;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    border: none;
+    font-family: "Poppins";
+    font-style: normal;
+    cursor: pointer;
+}
+
+.info .btn-foot:hover {
+    background: var(--primary-color);
 }
